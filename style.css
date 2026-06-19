@@ -128,16 +128,42 @@ nav {
 
 .header-section {
     margin-bottom: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
 }
 
-.header-section h1 {
+.header-text h1 {
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 8px;
 }
 
-.header-section p {
-    color: var(--text-muted);
+.search-container {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    max-width: 300px;
+    min-width: 200px;
+}
+
+#search-input {
+    width: 100%;
+    padding: 10px 16px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-surface);
+    color: var(--text-main);
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+#search-input:focus {
+    border-color: var(--text-muted);
+    box-shadow: 0 0 0 2px var(--border-color);
 }
 
 .doc-list {
