@@ -44,8 +44,13 @@
         <!-- View 1: List of Documents -->
         <div id="list-view">
             <div class="header-section">
-                <h1>Available Cheatsheets</h1>
-                <p>Select a document to view its contents.</p>
+                <!-- Teks header dibungkus div terpisah -->
+                <div class="header-text">
+                    <h1>Available Cheatsheets</h1>
+                </div>
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="Search cheatsheets..." autocomplete="off">
+                </div>
             </div>
             <div class="doc-list" id="doc-list">
                 <!-- Items will be injected here by JS -->
