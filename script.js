@@ -75,13 +75,20 @@ const pdfContainer = document.getElementById('pdf-container');
 const themeToggleBtn = document.getElementById('theme-toggle');
 const iconSun = document.getElementById('icon-sun');
 const iconMoon = document.getElementById('icon-moon');
+const searchInput = document.getElementById('search-input');
 
 /**
  * 2. Render List Dokumen
  */
-function renderDocumentList() {
+function renderDocumentList(docsToRender = documents) {
     docList.innerHTML = '';
-    documents.forEach(doc => {
+    
+    if (docsToRender.length === 0) {
+        docList.innerHTML = '<div style="color: var(--text-muted); padding: 20px 0; text-align: center;">No cheatsheets found matching your search.</div>';
+        return;
+    }
+    
+    docsToRender.forEach(doc => {
         const item = document.createElement('div');
         item.className = 'doc-list-item';
         item.onclick = () => navigateToDocument(doc.id);
@@ -122,7 +129,6 @@ function navigateToDocument(id) {
 }
 
 function navigateHome() {
-    // Remove 'doc' param from URL
     try {
         const url = new URL(window.location);
         url.searchParams.delete('doc');
@@ -131,6 +137,8 @@ function navigateHome() {
         console.warn('History API diblokir di lingkungan pratinjau ini.');
     }
 
+    searchInput.value = '';
+    renderDocumentList();
     showList();
 }
 
@@ -181,7 +189,6 @@ window.addEventListener('popstate', handleRoute);
  * 4. Theme Management (Dark Mode)
  */
 function initTheme() {
-    // Check local storage or system preference
     let savedTheme = null;
     try {
         savedTheme = localStorage.getItem('cheatsheetTheme');
@@ -215,6 +222,15 @@ function setTheme(theme) {
 themeToggleBtn.addEventListener('click', () => {
     const isDark = document.documentElement.hasAttribute('data-theme');
     setTheme(isDark ? 'light' : 'dark');
+});
+
+searchInput.addEventListener('input', (e) => {
+    const query = e.target.value.toLowerCase();
+    const filteredDocs = documents.filter(doc => 
+        doc.title.toLowerCase().includes(query) || 
+        doc.description.toLowerCase().includes(query)
+    );
+    renderDocumentList(filteredDocs);
 });
 
 /**
