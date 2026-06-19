@@ -2,21 +2,17 @@ const documents = [
     {
         id: 'win-cmd',
         title: 'Windows Commands',
-        fileUrl: 'pdfs/Windows_Commands.pdf',
+        fileUrl: 'pdfs/Windows_Commands.pdf'
     },
     {
-        id: 'js-modern',
-        title: 'Modern JavaScript (ES6+)',
-        description: 'Quick reference for Arrow Functions, Destructuring, Promises, etc.',
-        fileUrl: 'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf',
-        size: '342 KB'
+        id: 'xss-2020',
+        title: 'XSS Cheat Sheet 2020 edition',
+        fileUrl: 'pdfs/XSS_Cheat_Sheet_2020_ed.pdf'
     },
     {
-        id: 'css-flexbox',
-        title: 'CSS Flexbox Layout',
-        description: 'A complete guide to CSS flexbox container and items properties.',
-        fileUrl: 'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf',
-        size: '890 KB'
+        id: 'sqli',
+        title: 'SQL Injecion',
+        fileUrl: 'pdfs/SQL_Injecion.pdf'
     },
     {
         id: 'docker-cli',
