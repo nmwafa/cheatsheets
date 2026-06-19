@@ -58,6 +58,11 @@ const documents = [
         id: 'ceh-unix-enum',
         title: 'CEH Unix-Linux Enumeration',
         fileUrl: 'CEH_Unix_Linux_Enumeration.pdf'
+    },
+    {
+        id: 'python-one-liners',
+        title: 'Python One-Liners',
+        fileUrl: 'Python_One_Liners.pdf'
     }
 ];
 
