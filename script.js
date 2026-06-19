@@ -63,6 +63,21 @@ const documents = [
         id: 'python-one-liners',
         title: 'Python One-Liners',
         fileUrl: 'Python_One_Liners.pdf'
+    },
+    {
+        id: 'htb-ffuf',
+        title: 'Attacking Web Applications With Ffuf Module',
+        fileUrl: 'Attacking_Web_Applications_With_Ffuf_Module_Cheat_Sheet.pdf'
+    },
+    {
+        id: 'htb-file-inclusion',
+        title: 'File Inclusion Module',
+        fileUrl: 'File_Inclusion_Module_Cheat_Sheet.pdf'
+    },
+    {
+        id: 'htb-pentest-nutshell',
+        title: 'Pentest in a Nutshell Module',
+        fileUrl: 'Pentest_In_A_Nutshell_Module_Cheat_Sheet.pdf'
     }
 ];
 
