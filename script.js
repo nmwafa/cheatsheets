@@ -11,8 +11,8 @@ const documents = [
     },
     {
         id: 'sqli',
-        title: 'SQL Injecion',
-        fileUrl: 'pdfs/SQL_Injecion.pdf'
+        title: 'SQL Injection',
+        fileUrl: 'pdfs/SQL_Injection.pdf'
     },
     {
         id: 'docker-cli',
