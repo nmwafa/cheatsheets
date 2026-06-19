@@ -15,18 +15,49 @@ const documents = [
         fileUrl: 'pdfs/SQL_Injection.pdf'
     },
     {
-        id: 'docker-cli',
-        title: 'Docker CLI Reference',
-        description: 'Containers, Images, Networks, and Volumes cheat sheet.',
-        fileUrl: 'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf',
-        size: '215 KB'
+        id: 'ceh-hashcat',
+        title: 'CEH Hashcat',
+        fileUrl: 'pdfs/CEH_Hashcat.pdf'
     },
     {
-        id: 'linux-commands',
-        title: 'Linux Command Line',
-        description: 'File operations, process management, and system info.',
-        fileUrl: 'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf',
-        size: '1.2 MB'
+        id: 'ceh-metasploit',
+        title: 'CEH Metasploit',
+        fileUrl: 'pdfs/CEH_Metasploit.pdf'
+    },
+    {
+        id: 'ceh-mimikatz',
+        title: 'CEH Mimikats',
+        fileUrl: 'CEH_Mimikatz.pdf'
+    },
+    {
+        id: 'ceh-nikto',
+        title: 'CEH Nikto',
+        fileUrl: 'CEH_Nikto.pdf'
+    },
+    {
+        id: 'ceh-shodan',
+        title: 'CEH Shodan',
+        fileUrl: 'CEH_Shodan.pdf'
+    },
+    {
+        id: 'ceh-snort-rules',
+        title: 'CEH Snort Rules',
+        fileUrl: 'CEH_Snort_Rules.pdf'
+    },
+    {
+        id: 'ceh-sqlmap',
+        title: 'CEH SQLMap',
+        fileUrl: 'CEH_SQLMap.pdf'
+    },
+    {
+        id: 'ceh-thc-hydra',
+        title: 'CEH THC Hydra',
+        fileUrl: 'CEH_THC_Hydra.pdf'
+    },
+    {
+        id: 'ceh-unix-enum',
+        title: 'CEH Unix-Linux Enumeration',
+        fileUrl: 'CEH_Unix_Linux_Enumeration.pdf'
     }
 ];
 
