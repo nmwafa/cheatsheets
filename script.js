@@ -27,57 +27,57 @@ const documents = [
     {
         id: 'ceh-mimikatz',
         title: 'CEH Mimikats',
-        fileUrl: 'CEH_Mimikatz.pdf'
+        fileUrl: 'pdfs/CEH_Mimikatz.pdf'
     },
     {
         id: 'ceh-nikto',
         title: 'CEH Nikto',
-        fileUrl: 'CEH_Nikto.pdf'
+        fileUrl: 'pdfs/CEH_Nikto.pdf'
     },
     {
         id: 'ceh-shodan',
         title: 'CEH Shodan',
-        fileUrl: 'CEH_Shodan.pdf'
+        fileUrl: 'pdfs/CEH_Shodan.pdf'
     },
     {
         id: 'ceh-snort-rules',
         title: 'CEH Snort Rules',
-        fileUrl: 'CEH_Snort_Rules.pdf'
+        fileUrl: 'pdfs/CEH_Snort_Rules.pdf'
     },
     {
         id: 'ceh-sqlmap',
         title: 'CEH SQLMap',
-        fileUrl: 'CEH_SQLMap.pdf'
+        fileUrl: 'pdfs/CEH_SQLMap.pdf'
     },
     {
         id: 'ceh-thc-hydra',
         title: 'CEH THC Hydra',
-        fileUrl: 'CEH_THC_Hydra.pdf'
+        fileUrl: 'pdfs/CEH_THC_Hydra.pdf'
     },
     {
         id: 'ceh-unix-enum',
         title: 'CEH Unix-Linux Enumeration',
-        fileUrl: 'CEH_Unix_Linux_Enumeration.pdf'
+        fileUrl: 'pdfs/CEH_Unix_Linux_Enumeration.pdf'
     },
     {
         id: 'python-one-liners',
         title: 'Python One-Liners',
-        fileUrl: 'Python_One_Liners.pdf'
+        fileUrl: 'pdfs/Python_One_Liners.pdf'
     },
     {
         id: 'htb-ffuf',
         title: 'HTB Attacking Web Applications With Ffuf Module',
-        fileUrl: 'Attacking_Web_Applications_With_Ffuf_Module_Cheat_Sheet.pdf'
+        fileUrl: 'pdfs/Attacking_Web_Applications_With_Ffuf_Module_Cheat_Sheet.pdf'
     },
     {
         id: 'htb-file-inclusion',
         title: 'HTB File Inclusion Module',
-        fileUrl: 'File_Inclusion_Module_Cheat_Sheet.pdf'
+        fileUrl: 'pdfs/File_Inclusion_Module_Cheat_Sheet.pdf'
     },
     {
         id: 'htb-pentest-nutshell',
         title: 'HTB Pentest in a Nutshell Module',
-        fileUrl: 'Pentest_In_A_Nutshell_Module_Cheat_Sheet.pdf'
+        fileUrl: 'pdfs/Pentest_In_A_Nutshell_Module_Cheat_Sheet.pdf'
     }
 ];
 
