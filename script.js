@@ -152,7 +152,7 @@ function initTheme() {
     // Check local storage or system preference
     let savedTheme = null;
     try {
-        savedTheme = localStorage.getItem('theme');
+        savedTheme = localStorage.getItem('cheatsheetTheme');
     } catch (e) {
         console.warn('Akses localStorage diblokir di lingkungan pratinjau ini.');
     }
@@ -171,12 +171,12 @@ function setTheme(theme) {
         document.documentElement.setAttribute('data-theme', 'dark');
         iconMoon.classList.add('hidden');
         iconSun.classList.remove('hidden');
-        try { localStorage.setItem('theme', 'dark'); } catch(e) {}
+        try { localStorage.setItem('cheatsheetTheme', 'dark'); } catch(e) {}
     } else {
         document.documentElement.removeAttribute('data-theme');
         iconSun.classList.add('hidden');
         iconMoon.classList.remove('hidden');
-        try { localStorage.setItem('theme', 'light'); } catch(e) {}
+        try { localStorage.setItem('cheatsheetTheme', 'light'); } catch(e) {}
     }
 }
 
