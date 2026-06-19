@@ -242,8 +242,7 @@ themeToggleBtn.addEventListener('click', () => {
 searchInput.addEventListener('input', (e) => {
     const query = e.target.value.toLowerCase();
     const filteredDocs = documents.filter(doc => 
-        doc.title.toLowerCase().includes(query) || 
-        doc.description.toLowerCase().includes(query)
+        doc.title.toLowerCase().includes(query)
     );
     renderDocumentList(filteredDocs);
 });
