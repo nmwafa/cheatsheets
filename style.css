@@ -208,7 +208,7 @@ nav {
     display: none;
     flex: 1;
     flex-direction: column;
-    height: 100vh;
+    height: calc(100vh - var(--nav-height));
 }
 
 .viewer-header {
