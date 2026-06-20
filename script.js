@@ -78,6 +78,16 @@ const documents = [
         id: 'htb-pentest-nutshell',
         title: 'HTB Pentest in a Nutshell Module',
         fileUrl: 'pdfs/Pentest_In_A_Nutshell_Module_Cheat_Sheet.pdf'
+    },
+    {
+        id: 'oscp',
+        title: 'Offsec OSCP',
+        fileUrl: 'pdfs/OSCP.pdf'
+    },
+    {
+        id: '60-linux-cmd',
+        title: 'Top 60 Linux Commands',
+        fileUrl: 'pdfs/Top60LinuxCommands.pdf'
     }
 ];
 
