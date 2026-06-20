@@ -91,6 +91,7 @@ const themeToggleBtn = document.getElementById('theme-toggle');
 const iconSun = document.getElementById('icon-sun');
 const iconMoon = document.getElementById('icon-moon');
 const searchInput = document.getElementById('search-input');
+const mainNav = document.getElementById('main-nav');
 
 /**
  * 2. Render List Dokumen
@@ -158,9 +159,9 @@ function navigateHome() {
 }
 
 function showViewer(doc) {
-    // Update UI
     listView.style.display = 'none';
     viewerView.style.display = 'flex';
+    mainNav.classList.add('hidden');
     viewerTitle.textContent = doc.title;
     
     // Set up iframe viewer
@@ -178,7 +179,8 @@ function showViewer(doc) {
 function showList() {
     listView.style.display = 'block';
     viewerView.style.display = 'none';
-    pdfContainer.innerHTML = ''; // Clear iframe memory
+    mainNav.classList.remove('hidden');
+    pdfContainer.innerHTML = '';
 }
 
 function handleRoute() {
@@ -197,23 +199,20 @@ function handleRoute() {
     }
 }
 
-// Listen to browser Back/Forward buttons
 window.addEventListener('popstate', handleRoute);
 
 /**
- * 4. Theme Management (Dark Mode)
+ * 4. Theme Management
  */
 function initTheme() {
     let savedTheme = null;
     try {
         savedTheme = localStorage.getItem('cheatsheetTheme');
     } catch (e) {
-        console.warn('Akses localStorage diblokir di lingkungan pratinjau ini.');
+        console.warn('Access to localStorage blocked!');
     }
     
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    
-    if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+    if (savedTheme === 'dark') {
         setTheme('dark');
     } else {
         setTheme('light');
