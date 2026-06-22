@@ -88,6 +88,11 @@ const documents = [
         id: '60-linux-cmd',
         title: 'Top 60 Linux Commands',
         fileUrl: 'pdfs/Top60LinuxCommands.pdf'
+    },
+    {
+        id: '30-win-cmd',
+        title: '30 Windows Command Line',
+        fileUrl: 'pdfs/NetworkChuck30WindowsCommandLine.pdf'
     }
 ];
 
