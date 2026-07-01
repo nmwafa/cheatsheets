@@ -93,6 +93,11 @@ const documents = [
         id: '30-win-cmd',
         title: '30 Windows Command Line',
         fileUrl: 'pdfs/NetworkChuck30WindowsCommandLine.pdf'
+    },
+    {
+        id: 'aldf',
+        title: 'Advanced Linux Detection and Forensic',
+        fileUrl: 'pdfs/ALDF.pdf'
     }
 ];
 
