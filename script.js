@@ -98,6 +98,21 @@ const documents = [
         id: 'aldf',
         title: 'Advanced Linux Detection and Forensic',
         fileUrl: 'pdfs/ALDF.pdf'
+    },
+    {
+        id: 'linux-notes',
+        title: 'Linux Notes For Professionals',
+        fileUrl: 'pdfs/LinuxNotesForProfessionals.pdf'
+    },
+    {
+        id: 'bash-notes',
+        title: 'Bash Notes For Professionals',
+        fileUrl: 'pdfs/BashNotesForProfessionals.pdf'
+    },
+    {
+        id: 'powershell-notes',
+        title: 'Power Shell Notes For Professionals',
+        fileUrl: 'PowerShellNotesForProfessionals.pdf'
     }
 ];
 
