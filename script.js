@@ -112,7 +112,7 @@ const documents = [
     {
         id: 'powershell-notes',
         title: 'Power Shell Notes For Professionals',
-        fileUrl: 'PowerShellNotesForProfessionals.pdf'
+        fileUrl: 'pdfs/PowerShellNotesForProfessionals.pdf'
     }
 ];
 
